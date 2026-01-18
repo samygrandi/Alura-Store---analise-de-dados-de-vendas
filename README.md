@@ -1,97 +1,132 @@
 # Alura-Store---analise-de-dados-de-vendas
+
 📊 Análise de Desempenho das Lojas — Alura Store
-📌 Contexto do Projeto
+📌 Visão Geral
 
-Este projeto tem como objetivo auxiliar o Senhor João, proprietário da rede Alura Store, na tomada de decisão sobre qual loja vender para iniciar um novo empreendimento.
+Este projeto tem como objetivo analisar os dados de vendas de quatro lojas fictícias da Alura Store para auxiliar na tomada de decisão estratégica sobre qual loja deve ser vendida para viabilizar um novo empreendimento.
 
-A decisão foi baseada na análise de dados de vendas, faturamento, avaliações dos clientes e custos de frete, utilizando Python, Pandas e Matplotlib.
+O projeto foi desenvolvido utilizando Python e bibliotecas de análise e visualização de dados, com foco em métricas de desempenho financeiro, satisfação dos clientes e custos operacionais.
+
+🎯 Objetivo do Projeto
+
+Avaliar o desempenho das lojas com base nos seguintes indicadores:
+
+Faturamento total
+
+Faturamento por categoria de produtos
+
+Avaliação média dos clientes
+
+Frete médio por loja
+
+Ao final da análise, apresentar uma recomendação clara e fundamentada sobre qual loja deve ser vendida.
 
 🛠️ Tecnologias Utilizadas
 
-Python
+Python 3
 
-Pandas
+Pandas — Manipulação e análise de dados
 
-Matplotlib
+Matplotlib — Visualização de dados
 
-Google Colab Notebook
+Google Colab — Ambiente de desenvolvimento
 
-📈 Análises Realizadas
-1️⃣ Faturamento Total por Loja
+GitHub — Versionamento e publicação do projeto
 
-Foi calculado o faturamento total de cada loja a partir da soma do valor dos produtos vendidos.
+📁 Estrutura do Projeto
+📦 alura-store-analise
+ ┣ 📜 README.md
+ ┣ 📓 analise_lojas.ipynb
+ ┗ 📊 dados/
+    ┣ loja_1.csv
+    ┣ loja_2.csv
+    ┣ loja_3.csv
+    ┗ loja_4.csv
 
-Resultado da análise:
+📊 Etapas da Análise
+1️⃣ Importação e Tratamento dos Dados
 
-As Lojas 1 e 2 apresentaram os maiores faturamentos.
+Os dados das quatro lojas foram carregados a partir de arquivos CSV, utilizando a biblioteca Pandas.
+Foram realizadas verificações iniciais para garantir a consistência das informações.
 
-A Loja 3 teve desempenho intermediário.
+2️⃣ Análise de Faturamento
 
-A Loja 4 apresentou o menor faturamento, indicando menor retorno financeiro em comparação às demais.
+Cálculo do faturamento total por loja.
 
-📌 Esse indicador é fundamental, pois demonstra diretamente a capacidade de geração de receita de cada unidade.
+Comparação visual utilizando gráficos de barras.
 
-2️⃣ Faturamento por Categoria
+Identificação da loja com menor desempenho financeiro.
 
-A análise do faturamento por categoria revelou quais tipos de produtos mais contribuem para a receita de cada loja.
+3️⃣ Faturamento por Categoria
 
-Foram identificadas as 5 categorias mais relevantes (Top 5) para cada loja.
+Análise do faturamento agrupado por categoria de produtos.
 
-Observou-se que a Loja 4 possui menor concentração de faturamento em categorias estratégicas, além de menor diversificação de produtos com alto valor agregado.
+Identificação das 5 categorias mais relevantes (Top 5) em cada loja.
 
-📌 Esse comportamento sugere menor atratividade comercial e menor potencial de crescimento.
+Utilização de gráficos de pizza para análise percentual.
 
-3️⃣ Avaliação Média dos Clientes
+4️⃣ Avaliação Média dos Clientes
 
-A satisfação dos clientes foi analisada por meio da média das avaliações.
+Cálculo da média de avaliação de cada loja.
 
-Resultado da análise:
+Arredondamento para duas casas decimais.
 
-As Lojas 1 e 2 apresentam as melhores avaliações médias.
+Comparação visual entre as lojas.
 
-A Loja 3 mantém uma avaliação aceitável.
+5️⃣ Análise do Frete Médio
 
-A Loja 4 possui a menor avaliação média, indicando uma experiência menos satisfatória para os clientes.
+Cálculo do frete médio por loja.
 
-📌 Avaliações mais baixas podem impactar diretamente a fidelização e a reputação da loja.
+Visualização por meio de gráfico de barras.
 
-4️⃣ Frete Médio por Loja
+Identificação de lojas com maior custo logístico.
 
-O custo médio de frete foi analisado por ser um fator decisivo na experiência do consumidor.
-
-Resultado da análise:
-
-A Loja 4 apresenta um dos fretes médios mais elevados entre as unidades.
-
-Fretes mais altos tendem a reduzir a competitividade e podem afastar potenciais compradores.
-
-📌 Esse fator reforça o desempenho inferior da Loja 4 em relação às demais.
-
-📊 Visualizações
+📈 Visualizações
 
 Foram utilizados diferentes tipos de gráficos para facilitar a interpretação dos dados:
 
-Gráficos de barras para comparação de faturamento, avaliações e frete médio.
+Gráficos de barras
 
-Gráficos de pizza para análise do faturamento por categoria (Top 5).
+Gráficos de pizza
 
-Essas visualizações permitiram uma análise clara e objetiva dos indicadores-chave de desempenho.
+Essas visualizações permitem uma análise clara e objetiva dos indicadores de desempenho.
 
-✅ Conclusão e Recomendação Final
+✅ Conclusão
 
-Com base nas análises realizadas, conclui-se que a Loja 4 apresenta o pior desempenho geral entre as unidades da Alura Store.
+Com base nos dados analisados, foi possível identificar diferenças significativas entre as lojas.
+A Loja 4 apresentou:
 
-Ela se destaca negativamente nos principais indicadores analisados:
+O menor faturamento total
 
-Menor faturamento total
-
-Avaliação média inferior
+Avaliação média inferior às demais
 
 Frete médio elevado
 
-Menor relevância de categorias estratégicas
+Menor desempenho nas categorias estratégicas
 
-📌 Recomendação:
-Recomenda-se que o Senhor João venda a Loja 4 para viabilizar seu novo empreendimento, pois essa unidade demonstra menor eficiência operacional e menor potencial de retorno financeiro quando comparada às demais lojas da rede.
+📌 Recomendação final:
+A Loja 4 é a mais indicada para ser vendida, pois apresenta o menor desempenho geral, tornando-se a opção mais estratégica para desinvestimento e início de um novo empreendimento.
 
-Essa decisão é sustentada por dados objetivos e análises consistentes, garantindo maior segurança estratégica para o próximo passo do negócio.
+▶️ Como Executar o Projeto
+
+Clone este repositório:
+
+git clone https://github.com/seu-usuario/alura-store-analise.git
+
+
+Abra o notebook analise_lojas.ipynb no Google Colab ou em um ambiente Jupyter.
+
+Execute as células sequencialmente para reproduzir todas as análises e gráficos.
+
+⚠️ Possíveis Problemas e Soluções
+
+Erro ao carregar CSV: Verifique a conexão com a internet ou o caminho do arquivo.
+
+Gráficos não exibidos: Confirme se todas as células foram executadas corretamente.
+
+Diferença de valores: Certifique-se de não alterar os dados originais.
+
+📌 Considerações Finais
+
+Este projeto demonstra a aplicação prática de análise de dados para suporte à tomada de decisão, utilizando métricas objetivas e visualizações claras.
+O README foi estruturado para facilitar o entendimento do projeto por recrutadores e outros desenvolvedores.
