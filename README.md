@@ -14,7 +14,7 @@ Pandas
 
 Matplotlib
 
-Jupyter Notebook
+Google Colab Notebook
 
 📈 Análises Realizadas
 1️⃣ Faturamento Total por Loja
